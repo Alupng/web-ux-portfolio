@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e293b;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #60a5fa;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #3b82f6;
+}
+
+.main-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(to bottom, #0f172a 60%, #1e293b);
+}
+
+.main-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  color: #60a5fa;
+}
+
+.main-header p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2563eb;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+.gallery h2,
+.games h2 {
+  text-align: center;
+  color: #60a5fa;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  height: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.game-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.game-links a {
+  background-color: #2563eb;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.game-links a:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  background-color: #0f172a;
+  border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .profile-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .main-header p,
+  .content p {
+    font-size: 1rem;
+  }
+}
